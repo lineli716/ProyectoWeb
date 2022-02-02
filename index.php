@@ -1,5 +1,5 @@
 <?php
-    include "Controller/Uuario.controller.php";
+    include "Autoload,php";
 
     if(isset($_GET["Controller"]) && isset ($_GET["Method"]))
     {
