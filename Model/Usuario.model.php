@@ -2,7 +2,7 @@
     class Usuario
     {
         public $con;
-        public function_ construct()
+        public function_construct()
         {
             $this->con=new Conexion();
         }
