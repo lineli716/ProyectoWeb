@@ -1,19 +1,18 @@
 <?php
-function Autoload ($clase)
+function Autoload ($class)
 {
-    if(is_file("Controller/".$clase.".Controller.php"))
+    if(is_file('Controller/'.$class.'.Controller.php'))
     {
-        include "Controller/".$clase.".Controller.php";
+        include ('Controller/'.$class.'.Controller.php');
     }
-    if(is_file("Framework/Smarty/".$clase.".class.php"))
+    if(is_file('Framework/Smarty/'.$class.'.class.php'))
     {
-        include "Framework/Smarty/".$clase.".class.php";
+        include ('Framework/Smarty/'.$class.'.class.php');
     }
-    if(is_file("Model/".$clase.".Model.php"))
+    if(is_file('Model/'.$class.'.Model.php'))
     {
-        include "Model/".$clase.".Model.php";
+        include ('Model/'.$class.'.Model.php');
     }
-    spl_autoload_register("Autoload");
-
+    spl_autoload_register('Autoload');
 }
 ?>
