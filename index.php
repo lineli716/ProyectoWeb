@@ -1,10 +1,10 @@
 <?php
     include "Autoload.php";
 
-    if(isset($_GET['Controller']) && isset($_GET['Method']))
+    if(isset($_GET['controller']) && isset($_GET['method']))
     {
-        $controller=$_GET['Controller'];
-        $method=$_GET['Method'];
+        $controller=$_GET['controller'];
+        $method=$_GET['method'];
     }
     else
     {
@@ -19,6 +19,6 @@
     }
     else
     {
-        echo "La clase o metodo no existe";
+        echo "La clase o metodo no existe hola";
     }
 ?>

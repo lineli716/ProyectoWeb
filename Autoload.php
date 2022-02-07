@@ -1,5 +1,6 @@
 <?php
 function Autoload ($class)
+
 {
     if(is_file('Controller/'.$class.'.Controller.php'))
     {
@@ -9,10 +10,11 @@ function Autoload ($class)
     {
         include ('Framework/Smarty/'.$class.'.class.php');
     }
-    else if(is_file('Model/'.$class.'.Model.php'))
+    else if(is_file('model/'.$class.'.model.php'))
     {
-        include ('Model/'.$class.'.Model.php');
+        include ('model/'.$class.'.model.php');
     }
-    spl_autoload_register('Autoload');
+    
 }
+spl_autoload_register('Autoload');
 ?>
