@@ -1,7 +1,6 @@
 <?php
     class Home
     {
-
       public $smarty
       public $con;
       public function_construct()
