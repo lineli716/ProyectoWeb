@@ -1,5 +1,5 @@
 <?php
-    include "Autoload,php";
+    include "Autoload.php";
 
     if(isset($_GET["Controller"]) && isset ($_GET["Method"]))
     {
@@ -8,7 +8,7 @@
     }
     else
     {
-        $controller="Usuario";
+        $controller="Home";
         $method="Inicio";
     }
 
