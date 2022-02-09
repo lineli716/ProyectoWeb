@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-07 21:04:44
+/* Smarty version 4.0.4, created on 2022-02-09 16:27:59
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62017b5c01e1b1_40842119',
+  'unifunc' => 'content_6203dd7f16fa05_91396702',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78265baa3d709b1140bf0da2f08626d978a6b6ab' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Home.tpl',
-      1 => 1644262810,
+      1 => 1644420474,
       2 => 'file',
     ),
   ),
@@ -22,30 +22,31 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_62017b5c01e1b1_40842119 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6203dd7f16fa05_91396702 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="navbar-fixed">
-      <nav>
-        <nav class="amber darken-2">
-          <a href="" class="brand-logo">ATTICO</a>
-
-          <ul class="right hide-on-med-and-down">
+   <nav>
+      <nav class="green accent-2">
+         <div class="container">
+            <a href="" class="brand-logo">ATTICO</a>
+            <ul class="right hide-on-med-and-down">
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
-          </ul>
-        </nav>
+           </ul>
+          </div>
       </nav>
-    </div>
+  </nav>
+</div>
 
-<div class="card-panel amber darken-2">         
+<div class="card-panel yellow lighten-2">         
     <div class="container">
     <div class="row">
         <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
+        <div class="card yellow lighten-2">
         </div>
         </div>
     </div>      
@@ -80,12 +81,12 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
 
 </div>
 
-<footer class="page-footer card  cyan accent-4  "><div class="card  cyan accent-4">
+<footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
     <div class="container  ">
         <div class="row ">
         <div class="col l6 s12">
         <h5 class="white-text  "></h5>
-        <p class="grey-text text-lighten-4"></p>
+        <p class="green accent-2 text-lighten-4"></p>
         </div>
         <div class="col l4 offset-l2 s12">
         <h5 class="white-text"></h5>
