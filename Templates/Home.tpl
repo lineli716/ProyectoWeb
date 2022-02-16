@@ -2,7 +2,7 @@
 
 <div class="navbar-fixed">
    <nav>
-      <nav class="green accent-2">
+      <nav class="lime accent-3">
          <div class="container">
 
             <img src="Recursos/Lgo.png" height="60" width="55"> 
@@ -18,11 +18,11 @@
   </nav>
 </div>
 
-<div class="card-panel yellow lighten-2">         
+<div class="card-panel  teal accent-3">         
     <div class="container">
        <div class="row">
           <div class="col s12 m6">
-           <div class="card yellow lighten-2">
+           <div class="card  teal accent-3">
           </div>
         </div>
     </div>      
@@ -46,7 +46,7 @@
              </div>   
 
               <div align="center">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <button class="btn waves-effect amber" type="submit" name="action">Enviar
                 <i class="material-icons right">send</i>
                 </button>
              </div>
@@ -55,7 +55,7 @@
       </div>
 </div>
 
-<footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
+<footer class="page-footer card lime accent-3"><div class="card  lime accent-3">
     <div class="container  ">
         <div class="row ">
         <div class="col l6 s12">

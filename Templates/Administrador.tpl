@@ -30,7 +30,7 @@
             <h1>Administrador</h1>
                  {if isset($rol)}
                     {if $rol=='registro'}
-                        {include file='Administrador/registro.tpl'}
+                        {include file='Administrador/Registro.tpl'}
                      {else if $rol==''}
                     {include file='Administrador/.tpl'}
                 {/if}
