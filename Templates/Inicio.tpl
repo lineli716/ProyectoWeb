@@ -17,43 +17,25 @@
       </nav>
   </nav>
 </div>
-
-<div class="card-panel yellow lighten-2">         
-    <div class="container">
-       <div class="row">
-          <div class="col s12 m6">
-           <div class="card yellow lighten-2">
-          </div>
+    
+<body background="Recursos/Fondo.jpg">
+<br>
+    <div class="container"> 
+        <div class="container"> 
+            <div class="card-panel  blanco" height="10%" width="40%">
+                <br><br><br>
+                <img src="Recursos/Lgo.png" height="60" width="55">
+                <h1 class="center-align teal-text text-">ATTICO</h1>
+                <br><br>
+                <div align="center">
+                    <br><button class="btn waves-effect  yellow darken-1" type="submit" name="action">Enviar
+                        <i class="material-icons right">send</i>
+                        </button>
+                </div> <br><br><br>
+            </div>
         </div>
-    </div>      
-        <div>
-           <h1 class="center-align white-text text- ">Bienvenidos</h1>
-
-             <h5 class="center-align white-text text- ">Ingresa los siguientes datos</h5>
-         </div>
-
-         <form method="post" action="?controller=User&method=BuscarUsuario" class="col s4">
-             <div class="row">
-                <div class="input-field col s6">
-                   <input id="user" type="text" class="validate" required="" name="user">
-                   <label for="user">Usuario</label>
-                </div>
-     
-                <div class="input-field col s6">
-                   <input id="password" type="password" class="validate" required="" name="pass">
-                   <label for="password">Password</label>
-                </div>
-             </div>   
-
-              <div align="center">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-                <i class="material-icons right">send</i>
-                </button>
-             </div>
-          </form>
-
-      </div>
-</div>
+    </div>    
+</body>
 
 <footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
     <div class="container  ">
@@ -80,5 +62,6 @@
     </div>
 </footer>
 </div> 
+
 
 {include file="templates/Cabeceras/Footer.tpl"} 
