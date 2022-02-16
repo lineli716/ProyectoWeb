@@ -15,34 +15,32 @@
         <form method="post" action="?controller=Administrador&method=RegistroAdministrador">
 
             <div class="input-field col s8">
-            <input id="edad" type="number" name="edad"/>
-            <label for="edad">Nombre</label>
+                <input id="Nombre" type="text" name="Nombre"/>
+                <label for="Nombre">Nombre</label>
             </div>
 
             <div class="input-field col s8">
-            <input id="nombre" type="text" name="Consulta"/>
-            <label for="nombre">Descripcion</label>
-           </div>
+                <input id="Descripcion" type="text" name="Descripcion"/>
+                <label for="Descripcion">Descripcion</label>
+            </div>
 
             <div class="input-field col s8">
-            <input id="cantidad" type="number" name="DPI"/>
-            <label for="DPI">Precio</label>
+                <input id="Precio" type="number" name="Precio"/>
+                <label for="Precio">Precio</label>
             </div>
             
             <div class="input-field col s8">
-            <input id="cantidad" type="number" name="DPI"/>
-            <label for="DPI">Cantidad</label>
+                <input id="Cantidad" type="number" name="Cantidad"/>
+                <label for="Cantidad">Cantidad</label>
             </div>
              
-             
-
             <div class="row">
                     <div class="input-field col s8 center-align">
-                      <input class="waves-effect waves-light btn" type="submit"value="Guardar Producto"/>
-                    </div>
+                    <input class="waves-effect waves-light btn" type="submit"value="Guardar Producto"/>
+            </div>
             </div>
         </form>
     </div>
 </div>
-</div> 
+ 
 {include file="templates/Cabeceras/Footer.tpl"}

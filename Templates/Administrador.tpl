@@ -11,7 +11,7 @@
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
-            <li><a href="Home.tpl"><i class="material-icons">exit_to_app</i></a></li>
+            <li><a href="Home.tpl"><i class="material-icons">exit_to_app</i></a>
            </ul>
           </div>
       </nav>
@@ -19,24 +19,24 @@
 </div>
 
  <br></br>
-        <div class="col s5">
+    <div class="col s5">
         {include file="Navs/Admin.tpl"}
-        </div>
-
-        <div class="col 1">
-        </div>
-
-        <div class="col s5">
-        <h1>Administrador</h1>
-        {if isset($rol)}
-            {if $rol=='registro'}
-                {include file='Administrador/registro.tpl'}
-                {else if $rol==''}
-                    {include file='Administrador/.tpl'}
-            {/if}
-        {/if}
-        </div>
     </div>
+
+    <div class="col 1">
+     </div>
+
+    <div class="col s5">
+            <h1>Administrador</h1>
+                 {if isset($rol)}
+                    {if $rol=='registro'}
+                        {include file='Administrador/registro.tpl'}
+                     {else if $rol==''}
+                    {include file='Administrador/.tpl'}
+                {/if}
+                 {/if}
+    </div>
+    
 <footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
     <div class="container  ">
         <div class="row ">
