@@ -1,37 +1,34 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 16:07:58
+/* Smarty version 4.0.4, created on 2022-02-21 08:57:51
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d134eb62c09_16534878',
+  'unifunc' => 'content_621345ff5f6cc9_23875700',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51d3e0df4a40bd3a18038651f8dc60196100e14d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Administrador.tpl',
-      1 => 1645024075,
+      1 => 1645430266,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
-    'file:Navs/Admin.tpl' => 1,
-    'file:Administrador/Registro.tpl' => 1,
-    'file:Administrador/.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_620d134eb62c09_16534878 (Smarty_Internal_Template $_smarty_tpl) {
+function content_621345ff5f6cc9_23875700 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="navbar-fixed">
    <nav>
-      <nav class="green accent-2">
+      <nav class="lime accent-3">
          <div class="container">
 
             <img src="Recursos/Lgo.png" height="60" width="55"> 
@@ -40,36 +37,44 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
-            <li><a href="Home.tpl"><i class="material-icons">exit_to_app</i></a>
+            <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">exit_to_app</i></a>
            </ul>
           </div>
       </nav>
   </nav>
 </div>
 
- <br></br>
-    <div class="col s5">
-        <?php $_smarty_tpl->_subTemplateRender("file:Navs/Admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+<div class="card-panel  teal accent-3">  
+    <div class="container">
+        <div class="col s12 m6">
+             <h2 class="center-align white-text text- ">Menú</h2>
+             <h3 class="center-align white-text text- ">Elige una opción</h3>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">local_mall</i>Productos</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">event_seat</i>Marcas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">dns</i>Categorias</a>
+            </div>
+            </div>
+        </div>
+        <br>
+         <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Productos</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Marcas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Categorias</a>
+                </div>
+            </div>
+        </div>
+<br><br>
     </div>
+</div> 
 
-    <div class="col 1">
-     </div>
-
-    <div class="col s5">
-            <h1>Administrador</h1>
-                 <?php if ((isset($_smarty_tpl->tpl_vars['rol']->value))) {?>
-                    <?php if ($_smarty_tpl->tpl_vars['rol']->value == 'registro') {?>
-                        <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Registro.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-                     <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == '') {?>
-                    <?php $_smarty_tpl->_subTemplateRender('file:Administrador/.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-                <?php }?>
-                 <?php }?>
-    </div>
-    
-<footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
+<footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">
         <div class="row ">
         <div class="col l6 s12">

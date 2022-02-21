@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 16:38:03
+/* Smarty version 4.0.4, created on 2022-02-21 08:19:06
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d1a5b4ea831_90259248',
+  'unifunc' => 'content_62133ceae0bdb2_85249292',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78265baa3d709b1140bf0da2f08626d978a6b6ab' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Home.tpl',
-      1 => 1645025881,
+      1 => 1645026087,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_620d1a5b4ea831_90259248 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62133ceae0bdb2_85249292 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -82,7 +82,7 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
 </div>
 
 <footer class="page-footer card lime accent-3"><div class="card  lime accent-3">
-    <div class="container  ">
+    <div class="container ">
         <div class="row ">
         <div class="col l6 s12">
         <h5 class="white-text  "></h5>

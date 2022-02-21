@@ -56,7 +56,7 @@
 </div>
 
 <footer class="page-footer card lime accent-3"><div class="card  lime accent-3">
-    <div class="container  ">
+    <div class="container ">
         <div class="row ">
         <div class="col l6 s12">
         <h5 class="white-text  "></h5>

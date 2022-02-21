@@ -2,7 +2,7 @@
 
 <div class="navbar-fixed">
    <nav>
-      <nav class="green accent-2">
+      <nav class="lime accent-3">
          <div class="container">
 
             <img src="Recursos/Lgo.png" height="60" width="55"> 
@@ -11,33 +11,44 @@
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
-            <li><a href="Home.tpl"><i class="material-icons">exit_to_app</i></a>
+            <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">exit_to_app</i></a>
            </ul>
           </div>
       </nav>
   </nav>
 </div>
 
- <br></br>
-    <div class="col s5">
-        {include file="Navs/Admin.tpl"}
+<div class="card-panel  teal accent-3">  
+    <div class="container">
+        <div class="col s12 m6">
+             <h2 class="center-align white-text text- ">Menú</h2>
+             <h3 class="center-align white-text text- ">Elige una opción</h3>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">local_mall</i>Productos</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">event_seat</i>Marcas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">dns</i>Categorias</a>
+            </div>
+            </div>
+        </div>
+        <br>
+         <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Productos</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Marcas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Categorias</a>
+                </div>
+            </div>
+        </div>
+<br><br>
     </div>
+</div> 
 
-    <div class="col 1">
-     </div>
-
-    <div class="col s5">
-            <h1>Administrador</h1>
-                 {if isset($rol)}
-                    {if $rol=='registro'}
-                        {include file='Administrador/Registro.tpl'}
-                     {else if $rol==''}
-                    {include file='Administrador/.tpl'}
-                {/if}
-                 {/if}
-    </div>
-    
-<footer class="page-footer card  cyan accent-4  "><div class="card  green accent-2">
+<footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">
         <div class="row ">
         <div class="col l6 s12">
