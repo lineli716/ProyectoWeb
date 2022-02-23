@@ -9,7 +9,7 @@
         $DataBase="proyectoweb";
 
         parent:: __construct($ser, $user, $pass, $DataBase);
-        $this->query("SET NAMES 'uf-8';");
+        $this->query("SET NAMES 'utf-8';");
         $this->connect_errno? die('Hay error en la conexión') : $error="conectado a->".$DataBase;
        }
      }

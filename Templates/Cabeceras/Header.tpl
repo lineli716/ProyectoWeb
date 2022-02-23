@@ -8,9 +8,11 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    {if isset($title)}
+   <title>
+      {if isset($title)}
         {$title}
       {else}
         Inicio de Sesión
       {/if}
+      </title>
     <body>

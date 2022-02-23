@@ -1,4 +1,5 @@
 {include file="templates/Cabeceras/Header.tpl"}
+
 <div class="navbar-fixed">
    <nav>
       <nav class="lime accent-3">
@@ -18,23 +19,36 @@
   </nav>
 </div>
 
-<br></br>
-  <div class="col s5">
-  {include file="Navs/Admin.tpl"}
-  </div>
-
-    <div class="col 1">
-  </div>
-
-    <div class="col s5">
-    <h1>Administrador</h1>
-    {if isset($rol)}
-        {if $rol=='Inventario'}
-          {include file='Administrador/VerInventario.tpl'}
-          {else if $rol=='RegistroProducto'}
-            {include file='Administrador/Producto.tpl'}
-             
-
+<div class="card-panel  teal accent-3">  
+    <div class="container">
+        <div class="col s12 m6">
+             <h2 class="center-align white-text text- ">Menú</h2>
+             <h3 class="center-align white-text text- ">Elige una opción</h3>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a href="?controller=Administrador&method=Producto" class="waves-effect waves-light btn"><i class="material-icons left">local_mall</i>Productos</a>
+                <a href="?controller=Administrador&method=Marcas" class="waves-effect waves-light btn"><i class="material-icons left">event_seat</i>Marcas</a>
+                <a href="http://localhost/ProyectoWeb/ProyectoWeb/" class="waves-effect waves-light btn"><i class="material-icons left">dns</i>Categorias</a>
+                </div>
+            </div>
+        </div>
+        <br>
+         <div class="container">
+            <div class="col s6 m6">
+                <div class="center">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">queue_play_next</i>Entrada</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">unarchive</i>Salidas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">person</i>Usuarios</a>
+                
+                </div>
+            </div>
+        </div>
+<br><br>
+    </div>
+</div> 
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">

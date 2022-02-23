@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 08:57:51
+/* Smarty version 4.0.4, created on 2022-02-23 06:16:57
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621345ff5f6cc9_23875700',
+  'unifunc' => 'content_6215c34921ad16_33314286',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51d3e0df4a40bd3a18038651f8dc60196100e14d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Administrador.tpl',
-      1 => 1645430266,
+      1 => 1645593268,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_621345ff5f6cc9_23875700 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6215c34921ad16_33314286 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -38,6 +38,7 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">exit_to_app</i></a>
+            <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">person_pin</i></a>
            </ul>
           </div>
       </nav>
@@ -54,19 +55,20 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
         <div class="container">
             <div class="col s6 m6">
                 <div class="center">
-                <a class="waves-effect waves-light btn"><i class="material-icons left">local_mall</i>Productos</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">event_seat</i>Marcas</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">dns</i>Categorias</a>
-            </div>
+                <a href="?controller=Administrador&method=Producto" class="waves-effect waves-light btn"><i class="material-icons left">local_mall</i>Productos</a>
+                <a href="?controller=Administrador&method=Marcas" class="waves-effect waves-light btn"><i class="material-icons left">event_seat</i>Marcas</a>
+                <a href="http://localhost/ProyectoWeb/ProyectoWeb/" class="waves-effect waves-light btn"><i class="material-icons left">dns</i>Categorias</a>
+                </div>
             </div>
         </div>
         <br>
          <div class="container">
             <div class="col s6 m6">
                 <div class="center">
-                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Productos</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Marcas</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Categorias</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">queue_play_next</i>Entrada</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">unarchive</i>Salidas</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">person</i>Usuarios</a>
+                
                 </div>
             </div>
         </div>

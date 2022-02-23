@@ -2,10 +2,9 @@
     <nav class = "center-align lime accent-2">Opciones</nav>
         <div class="collection">
             {if $nav='Administrador'}
-                <a href="?controller=DireccionNav&method=Registro" class="collection-item">Registrar un producto</a>
-                <a href="?controller=DireccionNav&method=Marcas" class="collection-item">Marcas</a>
-                <a href="" class="collection-item">Entradas</a>
-                <a href="" class="collection-item">Salidas</a>
+                <a href="?controller=Direccion&method=Inventario" class="collection-item">Ver Inventario</a>
+                <a href="?controller=Direccion&method=RegistroP" class="collection-item">Registrar Productos</a>
+                 <a href="?controller=Direccion&method=RegistroP" class="collection-item">Registrar Productos</a>
             {/if}
         </div>   
 </div>

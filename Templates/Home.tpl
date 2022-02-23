@@ -1,5 +1,4 @@
 {include file="templates/Cabeceras/Header.tpl"}
-
 <div class="navbar-fixed">
    <nav>
       <nav class="lime accent-3">

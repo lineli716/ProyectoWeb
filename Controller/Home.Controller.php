@@ -3,6 +3,7 @@
     {
       public $smarty;
       public $con;
+      
       public function __construct()
       {
           $this->smarty=new Smarty();
@@ -10,7 +11,7 @@
       }
        public function Inicio()
        {
-           $this->smarty->display('Home.tpl');
+        $this->smarty->display('Home.tpl');
        }
 
     }

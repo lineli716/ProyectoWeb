@@ -6,6 +6,7 @@ function Autoload ($class)
     {
         include ('Controller/'.$class.'.Controller.php');
     }
+    
     else if(is_file('Framework/Smarty/'.$class.'.class.php'))
     {
         include ('Framework/Smarty/'.$class.'.class.php');
