@@ -20,20 +20,21 @@
 
 <br></br>
   <div class="col s5">
-  {include file="Navs/Admin.tpl"}
-  </div>
-
+    {include file="Navs/Admin.tpl"}
+    </div>
     <div class="col 1">
-  </div>
-
+    </div>
     <div class="col s5">
     <h1>Administrador</h1>
-    {if isset($rol)}
-        {if $rol=='Inventario'}
-          {include file='Administrador/VerInventario.tpl'}
-          {else if $rol=='RegistroProducto'}
-            {include file='Administrador/Producto.tpl'}
-             
+      {if isset($rol)}
+          {if $rol=='Inventario'}
+            {include file='Administrador/Inventario.tpl'}
+            {else if $rol=='RegistroProducto'}
+              {include file='Administrador/Productos.tpl'}
+          {/if}
+      {/if}         
+      </div>
+</div>
 
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">

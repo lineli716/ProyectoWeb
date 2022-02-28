@@ -3,7 +3,6 @@
         {
             public $Admin;
             public $smarty;
-            
 
             public function __construct()
             {
@@ -11,7 +10,7 @@
                 $this->smarty=new Smarty();
             }
 
-            public function Producto()
+            public function RegistroProducto()
             {
                
                 $idControl=$_POST['Control_idControl'];
