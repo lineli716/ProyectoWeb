@@ -7,7 +7,7 @@
         public function __construct()
         {
             $this->smarty=new Smarty();
-            $this->Admin=new Administradores(); 
+            $this->administrador=new Administradores(); 
         }
         
         public function Inventario()
@@ -31,3 +31,23 @@
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
+
+        public function RegistroMarca()
+        {
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','RegistroMarca');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
+
+        public function RegistroCategoría()
+        {
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','RegistroCategoria');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
+
+
+
+?>

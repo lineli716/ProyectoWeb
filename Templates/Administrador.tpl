@@ -17,6 +17,7 @@
       </nav>
   </nav>
 </div>
+<div class="center"> <h3>Administrador</h3></div>
 
 <br></br>
   <div class="col s5">
@@ -25,12 +26,20 @@
     <div class="col 1">
     </div>
     <div class="col s5">
-    <h1>Administrador</h1>
+   
       {if isset($rol)}
           {if $rol=='Inventario'}
             {include file='Administrador/Inventario.tpl'}
             {else if $rol=='RegistroProducto'}
               {include file='Administrador/Productos.tpl'}
+              {else if $rol=='RegistroMarca'}
+                {include file='Administrador/Marcas.tpl'} 
+                 {else if $rol=='RegistroCategoria'}
+                   {include file='Administrador/Categorias.tpl'}
+                    {else if $rol=='Entredas'}
+                      {include file='Administrador/Entredas.tpl'}
+                      {else if $rol=='Salidas'}
+                         {include file='Administrador/Salidas.tpl'}
           {/if}
       {/if}         
       </div>

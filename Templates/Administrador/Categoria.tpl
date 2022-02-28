@@ -21,21 +21,16 @@
 <div class="row">
 
     <div class="col s8">
-        <form method="post" action="?controller=Direccion&method=RegistroMarca">
+        <form method="post" action="?controller=Direccion&method=RegistroCategoria">
 
             <div class="input-field col s8">
                 <input id="Nombre" type="text" name="Nombre"/>
                 <label for="Nombre">Nombre</label>
             </div>
 
-            <div class="input-field col s8">
-                <input id="Detalles" type="text" name="Detalles"/>
-                <label for="Detalles">Detalles</label>
-            </div>
-            
             <div class="row">
                     <div class="input-field col s8 center-align">
-                    <input class="waves-effect waves-light btn" type="submit"value="Guardar Marca"/>
+                    <input class="waves-effect waves-light btn" type="submit"value="Guardar Categoria"/>
             </div>
             </div>
         </form>

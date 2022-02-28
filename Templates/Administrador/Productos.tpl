@@ -11,7 +11,7 @@
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
-            <li><a href="c"><i class="material-icons">exit_to_app</i></a>
+            <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">exit_to_app</i></a>
             <li><a href="http://localhost/ProyectoWeb/ProyectoWeb/"><i class="material-icons">person_pin</i></a>
            </ul>
           </div>
@@ -22,7 +22,7 @@
 <div class="row">
 
     <div class="col s8">
-        <form method="post" action="?class=Administrador&method=Producto">
+        <form method="post" action="?controller=Direccion&method=RegistroProducto">
 
             <div class="input-field col s8">
                 <input id="idControl" type="number" name="idControl"/>

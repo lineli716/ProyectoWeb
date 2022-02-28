@@ -28,6 +28,30 @@
                 $this->smarty->display('Administrador/Productos.tpl');
             } 
 
+            public function RegistroMarca()
+            {
+               
+                $Nombre=$_POST['Nombre'];
+                $Descripcion=$_POST['Detalles'];
+
+                $m=$this->Admin->CrearMarca($Nombre, $Detalles);
+                $this->smarty->assign('nav',"Administrador");
+                $this->smarty->assign('title','Administrador');
+                $this->smarty->display('Administrador/Marcas.tpl');
+            } 
+
+            public function RegistroCategoría()
+            {
+               
+                $Nombre=$_POST['Nombre'];
+                $Descripcion=$_POST['Descripcion'];
+
+                $o=$this->Admin->CrearMarca($Nombre, $Descripcion);
+                $this->smarty->assign('nav',"Administrador");
+                $this->smarty->assign('title','Administrador');
+                $this->smarty->display('Administrador/Categoria.tpl');
+            } 
+
 
         }
 ?>
