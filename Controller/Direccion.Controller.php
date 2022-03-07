@@ -18,6 +18,7 @@
             {
                 array_push($arr,$row);
             }
+            
             $this->smarty->assign('administrador', $arr);
             $this->smarty->assign('nav', 'administrador');
             $this->smarty->assign('rol','Inventario');
@@ -26,8 +27,9 @@
         }
         public function RegistroProducto()
         {
+            
             $this->smarty->assign('nav','administrador');
-            $this->smarty->assign('rol','RegistroProductos');
+            $this->smarty->assign('rol','RegistroProducto');
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
@@ -48,6 +50,6 @@
             $this->smarty->display('Administrador.tpl');
         }
 
-
+    }
 
 ?>

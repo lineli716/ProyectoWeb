@@ -17,16 +17,14 @@
       </nav>
   </nav>
 </div>
-<div class="center"> <h3>Administrador</h3></div>
 
+<div class="center"> <h3>Administrador</h3></div>
 <br></br>
-  <div class="col s5">
+<div class="row">
+  <div class="col s4">
     {include file="Navs/Admin.tpl"}
-    </div>
-    <div class="col 1">
-    </div>
-    <div class="col s5">
-   
+  </div>
+    <div class="col s8">
       {if isset($rol)}
           {if $rol=='Inventario'}
             {include file='Administrador/Inventario.tpl'}
@@ -42,9 +40,9 @@
                          {include file='Administrador/Salidas.tpl'}
           {/if}
       {/if}         
-      </div>
+    </div>
+  </div>   
 </div>
-
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">

@@ -30,6 +30,13 @@
                     $this->smarty->assign('title','Administrador');
                     $this->smarty->display('Administrador.tpl');
                 }
+                else if ($arr[0]['Rol_idRol']==2)
+                {
+    
+                    $this->smarty->assign('nav','Encargado');
+                    $this->smarty->assign('title','Encargado');
+                    $this->smarty->display('Encargado.tpl');
+                }
 
             } 
 

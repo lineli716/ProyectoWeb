@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-28 06:51:33
+/* Smarty version 4.0.4, created on 2022-03-07 05:35:10
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621c62e50c3585_47035547',
+  'unifunc' => 'content_62258b7e085ba4_11909995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51d3e0df4a40bd3a18038651f8dc60196100e14d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Administrador.tpl',
-      1 => 1646027485,
+      1 => 1646627700,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_621c62e50c3585_47035547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62258b7e085ba4_11909995 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
@@ -50,17 +50,15 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
       </nav>
   </nav>
 </div>
-<div class="center"> <h3>Administrador</h3></div>
 
+<div class="center"> <h3>Administrador</h3></div>
 <br></br>
-  <div class="col s5">
+<div class="row">
+  <div class="col s4">
     <?php $_smarty_tpl->_subTemplateRender("file:Navs/Admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-    </div>
-    <div class="col 1">
-    </div>
-    <div class="col s5">
-   
+  </div>
+    <div class="col s8">
       <?php if ((isset($_smarty_tpl->tpl_vars['rol']->value))) {?>
           <?php if ($_smarty_tpl->tpl_vars['rol']->value == 'Inventario') {?>
             <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Inventario.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -82,9 +80,9 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
 ?>
           <?php }?>
       <?php }?>         
-      </div>
+    </div>
+  </div>   
 </div>
-
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">

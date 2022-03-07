@@ -1,19 +1,15 @@
 {include file="templates/Cabeceras/Header.tpl"}
 <div class="row">
-        <div class="input-field col s12">
-            <h4 class="center-align black-text">Ver Inventario</h4>
-        </div>
-    </div>
-
+        <div class="col s11" align="center">
+        <h3>Ver Inventario</h3>  
+        </div>   
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s11">
             <table>
                 <thead class="text_center">
                     <tr>
-                        <th>Control_idControl</th>
-                        <th>Usuarios_idUsuario</th>
-                        <th>Marcas_idMarcas'</th>
-                        <th>Categoria_idCategoria</th>
+                        <th>Marcas</th>
+                        <th>Categoria</th>
                         <th>Nombre del Producto</th>
                         <th>Descripcion</th>
                         <th>Precio</th>
@@ -22,17 +18,10 @@
                     </tr>
                 </thead>
                 <tbody>
-            {if isset ($productos)}
-                    {foreach from=$productos item=$Admin }
+            {if isset ($administrador)}
+                    {foreach from=$administrador item=$Admin }
                         <tr>
-                             <td>
-                                {$Admin['Control_idControl']}
-                            </td>
-
-                            <td>
-                                {$Admin['Usuarios_idUsuario']}
-                            </td>
-
+                            
                             <td>
                                 {$Admin['Marcas_idMarcas']}
                             </td>
@@ -46,7 +35,7 @@
                             </td>
 
                              <td>
-                                 {$Admin['Descripcion']}
+                                 {$Admin['Descripción']}
                             </td>
 
                             <td>

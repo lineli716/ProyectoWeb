@@ -8,12 +8,11 @@
             session_start();
         }
 
-        public function CrearProducto($idControl, $idUsuarios, $idMarcas, $idCategoria, $Nombre,$Descripcion,$Precio,$Cantidad)
+        public function CrearProducto($idMarca, $idCategoria, $Nombre,$Descripcion,$Precio,$Cantidad)
         {
             
-            $query="INSERT INTO `productos`(`idProductos`, `Control_idControl`, `Usuarios_idUsuario`, `Marcas_idMarcas`, `Categoria_idCategoria`, `Nombre`, `Descripción`, `Precio`, `Cantidad`)
-            VALUES ('[$idControl]','[$idUsuarios]','[$idMarcas]','[$idCategoria]','[$Nombre]','[$Descripcion]','[$Precio]','[$Cantidad]','[value-9]');";
-            
+            $query="INSERT INTO `productos`(`Marcas_idMarcas`, `Categoria_idCategoria`, `Nombre`, `Descripción`, `Precio`, `Cantidad`)
+            VALUES ('[$idMarca]','[$idCategoria]','[$Nombre]','[$Descripcion]','[$Precio]','[$Cantidad]');";
             $resultado=$this->con->query($query);
             $this->con->close();
             return $resultado;
@@ -47,6 +46,6 @@
 
 
 
-    ]
+    }
 
 ?>
