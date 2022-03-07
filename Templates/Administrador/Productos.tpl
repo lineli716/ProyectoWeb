@@ -3,7 +3,7 @@
 <div class="row">
 
     <div class="col s11">
-        <form method="post" action="?controller=Direccion&method=RegistroProducto">
+        <form method="post" action="?controller=Administrador&method=RegistroProducto">
 
             <div class="input-field col s11">
                 <input id="idMarca" type="text" name="idMarca"/>

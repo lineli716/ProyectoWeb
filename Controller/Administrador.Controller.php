@@ -3,28 +3,27 @@
         {
             public $Admin;
             public $smarty;
+            public $direcciones;
 
             public function __construct()
             {
                 $this->Admin=new Administradores();
                 $this->smarty=new Smarty();
+                $this->direcciones=new Direccion();
             }
 
             public function RegistroProducto()
             {
                
-                $idMarca=$_POST['Marcas_idMarcas'];
-                $idCategoria=$_POST['Categoria_idCategoria'];
+                $idMarca=$_POST['idMarca'];
+                $idCategoria=$_POST['idCategoria'];
                 $Nombre=$_POST['Nombre'];
                 $Descripcion=$_POST['Descripcion'];
                 $Precio=$_POST['Precio'];
                 $Cantidad=$_POST['Cantidad'];
 
                 $z=$this->Admin->CrearProducto($idMarca, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
-                $this->smarty->assign('nav',"Administrador");
-                $this->smarty->assign('title','Administrador');
-                $this->smarty->display('Administrador/Productos.tpl');
-
+                $this->direcciones->RegistroProducto();
             } 
 
             public function RegistroMarca()
