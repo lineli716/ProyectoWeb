@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 05:13:41
+/* Smarty version 4.0.4, created on 2022-03-07 21:12:23
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Administrador\Inventario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_622586754a99c3_21490682',
+  'unifunc' => 'content_622667271bd683_63792936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c490f247072a19516fd2f3bc1e957d69da80809' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Administrador\\Inventario.tpl',
-      1 => 1646626419,
+      1 => 1646683939,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_622586754a99c3_21490682 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622667271bd683_63792936 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="row">
@@ -54,12 +54,12 @@ $_smarty_tpl->tpl_vars['Admin']->do_else = false;
                         <tr>
                             
                             <td>
-                                <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Marcas_idMarcas'];?>
+                                <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Marca'];?>
 
                             </td>
 
                             <td>
-                                 <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Categoria_idCategoria'];?>
+                                 <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Categoria'];?>
 
                             </td>
 

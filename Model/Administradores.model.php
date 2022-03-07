@@ -20,7 +20,7 @@
 
         public function VerInventario()
         {
-            $query="SELECT * FROM `productos`;";
+            $query="SELECT p.Nombre, p.Descripción, p.Precio, p.Cantidad, c.Nombre AS Categoria, m.Nombre AS Marca FROM `productos` AS p, categoria AS c, marcas AS m WHERE p.Categoria_idCategoria=c.idCategoria AND p.Marcas_idMarcas=m.idMarcas;";
             $resultado=$this->con->query($query);
             $this->con->close();
             return $resultado;

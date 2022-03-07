@@ -23,11 +23,11 @@
                         <tr>
                             
                             <td>
-                                {$Admin['Marcas_idMarcas']}
+                                {$Admin['Marca']}
                             </td>
 
                             <td>
-                                 {$Admin['Categoria_idCategoria']}
+                                 {$Admin['Categoria']}
                             </td>
 
                             <td>
