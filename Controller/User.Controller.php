@@ -38,6 +38,12 @@
                     $this->smarty->display('Encargado.tpl');
                 }
 
+               else if ($arr[0]['Rol_idRol']==2)
+                {
+                    $this->smarty->assign('title','Encargado');
+                    $this->smarty->display('Encargado.tpl');
+                }
+
             } 
 
             else if($u->num_rows>1)
