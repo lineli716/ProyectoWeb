@@ -21,29 +21,36 @@
 <div class="center"> <h3>Encargado</h3></div>
 <br></br>
 <div class="row">
+<<<<<<< Updated upstream
+  <div class="col s4">
+    {include file="Navs/Encar.tpl"}
+  </div>
+    <div class="col s8">
+=======
   <div class="col s5">
     {include file="Navs/Encar.tpl"}
     </div>
     <div class="col s7"> 
+>>>>>>> Stashed changes
       {if isset($rol)}
           {if $rol=='Inventario'}
-            {include file='Administrador/Inventario.tpl'}
+            {include file='Encargado/Inventario.tpl'}
             {else if $rol=='RegistroProducto'}
-              {include file='Administrador/Productos.tpl'}
+              {include file='Encargado/Productos.tpl'}
               {else if $rol=='RegistroMarca'}
-                {include file='Administrador/Marcas.tpl'} 
+                {include file='Encargado/Marcas.tpl'} 
                  {else if $rol=='RegistroCategoria'}
-                   {include file='Administrador/Categorias.tpl'}
+                   {include file='Encargado/Categorias.tpl'}
                     {else if $rol=='Entredas'}
-                      {include file='Administrador/Entredas.tpl'}
+                      {include file='Encargado/Entredas.tpl'}
                       {else if $rol=='Salidas'}
-                         {include file='Administrador/Salidas.tpl'}
+                         {include file='Encargado/Salidas.tpl'}
           {/if}
       {/if}         
-      </div>
+    </div>
+  </div>   
 </div>
 </div>
-
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">
