@@ -1,25 +1,25 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 20:37:32
-  from 'C:\xampp\htdocs\ProyectoWeb\templates\Encargado.tpl' */
+/* Smarty version 4.0.4, created on 2022-02-28 20:56:09
+  from 'C:\xampp\htdocs\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62265efc62b287_11346555',
+  'unifunc' => 'content_621d28d957eec2_73693373',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '893397712c122723ce390a2a94ed959092192c42' => 
+    '4b3e27dc9c8ad3622a37246e6b4e6e50fca42347' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Encargado.tpl',
-      1 => 1646681750,
+      0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Administrador.tpl',
+      1 => 1646076663,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
-    'file:Navs/Encar.tpl' => 1,
+    'file:Navs/Admin.tpl' => 1,
     'file:Administrador/Inventario.tpl' => 1,
     'file:Administrador/Productos.tpl' => 1,
     'file:Administrador/Marcas.tpl' => 1,
@@ -29,7 +29,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_62265efc62b287_11346555 (Smarty_Internal_Template $_smarty_tpl) {
+function content_621d28d957eec2_73693373 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
@@ -51,11 +51,11 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
   </nav>
 </div>
 
-<div class="center"> <h3>Encargado</h3></div>
+<div class="center"> <h3>Administrador</h3></div>
 <br></br>
 <div class="row">
   <div class="col s5">
-    <?php $_smarty_tpl->_subTemplateRender("file:Navs/Encar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+    <?php $_smarty_tpl->_subTemplateRender("file:Navs/Admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     </div>
     <div class="col s7"> 

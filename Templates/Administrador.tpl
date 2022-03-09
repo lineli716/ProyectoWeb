@@ -21,10 +21,17 @@
 <div class="center"> <h3>Administrador</h3></div>
 <br></br>
 <div class="row">
+<<<<<<< Updated upstream
   <div class="col s4">
     {include file="Navs/Admin.tpl"}
   </div>
     <div class="col s8">
+=======
+  <div class="col s5">
+    {include file="Navs/Admin.tpl"}
+    </div>
+    <div class="col s7"> 
+>>>>>>> Stashed changes
       {if isset($rol)}
           {if $rol=='Inventario'}
             {include file='Administrador/Inventario.tpl'}
@@ -42,6 +49,7 @@
       {/if}         
     </div>
   </div>   
+</div>
 </div>
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
