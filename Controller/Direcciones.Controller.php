@@ -18,34 +18,36 @@
             {
                 array_push($arr,$row);
             }
+            
             $this->smarty->assign('encargado', $arr);
             $this->smarty->assign('nav', 'encargado');
             $this->smarty->assign('rol','Inventario');
-            $this->smarty->assign('title','Encargado');
-            $this->smarty->display('Encargado.tpl');
+            $this->smarty->assign('title','encargado');
+            $this->smarty->display('Administrador.tpl');
         }
         public function RegistroProducto()
         {
-            $this->smarty->assign('nav','encargado');
-            $this->smarty->assign('rol','RegistroProductos');
-            $this->smarty->assign('title','Encargado');
-            $this->smarty->display('Encargado.tpl');
+            
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','RegistroProducto');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
         }
 
         public function RegistroMarca()
         {
-            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('nav','administrador');
             $this->smarty->assign('rol','RegistroMarca');
-            $this->smarty->assign('title','Encargado');
-            $this->smarty->display('Encargado.tpl');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
         }
 
         public function RegistroCategoría()
         {
-            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('nav','administrador');
             $this->smarty->assign('rol','RegistroCategoria');
-            $this->smarty->assign('title','Encargado');
-            $this->smarty->display('Encargado.tpl');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
         }
-
+    }
 ?>
