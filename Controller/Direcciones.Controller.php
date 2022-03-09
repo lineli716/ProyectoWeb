@@ -22,7 +22,7 @@
             $this->smarty->assign('encargado', $arr);
             $this->smarty->assign('nav', 'encargado');
             $this->smarty->assign('rol','Inventario');
-            $this->smarty->assign('title','encargado');
+            $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
         }
         public function RegistroProducto()
@@ -38,7 +38,7 @@
         {
             $this->smarty->assign('nav','encargado');
             $this->smarty->assign('rol','RegistroMarca');
-            $this->smarty->assign('title','Encargadp');
+            $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
         }
 
