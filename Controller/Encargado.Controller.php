@@ -25,7 +25,7 @@
                 $z=$this->Enc->CrearProducto($idControl, $idUsuarios, $idMarcas, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
                 $this->smarty->assign('nav',"Encargado");
                 $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Administrador/Productos.tpl');
+                $this->smarty->display('Encargado/Productos.tpl');
             } 
 
             public function RegistroMarca()
@@ -37,7 +37,7 @@
                 $m=$this->Enc->CrearMarca($Nombre, $Detalles);
                 $this->smarty->assign('nav',"Encargado");
                 $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Administrador/Marcas.tpl');
+                $this->smarty->display('Encargado/Marcas.tpl');
             } 
 
             public function RegistroCategoría()
@@ -49,7 +49,7 @@
                 $o=$this->Enc->CrearMarca($Nombre, $Descripcion);
                 $this->smarty->assign('nav',"Encargado");
                 $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Administrador/Categoria.tpl');
+                $this->smarty->display('Encargado/Categoria.tpl');
             } 
 
 

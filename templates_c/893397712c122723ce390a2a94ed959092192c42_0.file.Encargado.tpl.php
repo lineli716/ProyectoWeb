@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 20:37:32
+/* Smarty version 4.0.4, created on 2022-03-09 16:25:02
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Encargado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62265efc62b287_11346555',
+  'unifunc' => 'content_6228c6ce41e494_85522227',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '893397712c122723ce390a2a94ed959092192c42' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Encargado.tpl',
-      1 => 1646681750,
+      1 => 1646839487,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
     'file:Navs/Encar.tpl' => 1,
-    'file:Administrador/Inventario.tpl' => 1,
-    'file:Administrador/Productos.tpl' => 1,
-    'file:Administrador/Marcas.tpl' => 1,
-    'file:Administrador/Categorias.tpl' => 1,
-    'file:Administrador/Entredas.tpl' => 1,
-    'file:Administrador/Salidas.tpl' => 1,
+    'file:Encargado/Inventario.tpl' => 1,
+    'file:Encargado/Productos.tpl' => 1,
+    'file:Encargado/Marcas.tpl' => 1,
+    'file:Encargado/Categorias.tpl' => 1,
+    'file:Encargado/Entredas.tpl' => 1,
+    'file:Encargado/Salidas.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_62265efc62b287_11346555 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6228c6ce41e494_85522227 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
@@ -61,22 +61,22 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
     <div class="col s7"> 
       <?php if ((isset($_smarty_tpl->tpl_vars['rol']->value))) {?>
           <?php if ($_smarty_tpl->tpl_vars['rol']->value == 'Inventario') {?>
-            <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Inventario.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+            <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Inventario.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
             <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'RegistroProducto') {?>
-              <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Productos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+              <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Productos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
               <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'RegistroMarca') {?>
-                <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Marcas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Marcas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?> 
                  <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'RegistroCategoria') {?>
-                   <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Categorias.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                   <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Categorias.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                     <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Entredas') {?>
-                      <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Entredas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                      <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Entredas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                       <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Salidas') {?>
-                         <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Salidas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                         <?php $_smarty_tpl->_subTemplateRender('file:Encargado/Salidas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
           <?php }?>
       <?php }?>         
