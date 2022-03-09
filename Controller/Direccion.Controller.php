@@ -49,12 +49,5 @@
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
-<<<<<<< Updated upstream:Controller/Direccion.Controller.php
-
     }
-=======
-    }
-
->>>>>>> Stashed changes:Controller/Direccion.php
-
 ?>

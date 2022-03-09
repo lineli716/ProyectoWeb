@@ -48,6 +48,4 @@
             $this->smarty->display('Encargado.tpl');
         }
 
-
-
 ?>
