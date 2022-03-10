@@ -34,8 +34,8 @@
                 {include file='Encargado/Marcas.tpl'} 
                  {else if $rol=='RegistroCategoria'}
                    {include file='Encargado/Categorias.tpl'}
-                    {else if $rol=='Entredas'}
-                      {include file='Encargado/Entredas.tpl'}
+                    {else if $rol=='Entradas'}
+                      {include file='Encargado/Entradas.tpl'}
                       {else if $rol=='Salidas'}
                          {include file='Encargado/Salidas.tpl'}
           {/if}
