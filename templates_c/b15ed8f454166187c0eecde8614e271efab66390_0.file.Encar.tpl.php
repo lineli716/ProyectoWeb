@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-10 21:12:25
+/* Smarty version 4.0.4, created on 2022-03-10 21:35:54
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Navs\Encar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_622a5ba97a3fc7_33077848',
+  'unifunc' => 'content_622a612aa412d8_06736839',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b15ed8f454166187c0eecde8614e271efab66390' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Navs\\Encar.tpl',
-      1 => 1646943131,
+      1 => 1646944545,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_622a5ba97a3fc7_33077848 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="col s5">
+function content_622a612aa412d8_06736839 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="col s8">
     <nav class= "center-align lime accent-2">Opciones</nav>
         <div class="collection">
             <?php $_prefixVariable1 = 'Encargado';

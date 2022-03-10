@@ -14,20 +14,20 @@
                     </tr>
                 </thead>
                 <tbody>
-            {if isset ($administrador)}
-                    {foreach from=$administrador item=$Admin }
+            {if isset ($encargado)}
+                    {foreach from=$encargado item=$Enc }
                         <tr>
                             
                             <td>
-                                {$Admin['Nombre']}
+                                {$Enc['Nombre']}
                             </td>
 
                             <td>
-                                 {$Admin['Cantidad']}
+                                 {$Enc['Cantidad']}
                             </td>
 
                             <td>
-                                 {$Admin['Razon']}
+                                 {$Enc['Razon']}
                             </td>
 
                         </tr>

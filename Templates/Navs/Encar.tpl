@@ -1,4 +1,4 @@
-<div class="col s5">
+<div class="col s8">
     <nav class= "center-align lime accent-2">Opciones</nav>
         <div class="collection">
             {if $nav='Encargado'}

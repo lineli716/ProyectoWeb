@@ -22,7 +22,7 @@
                 $Precio=$_POST['Precio'];
                 $Cantidad=$_POST['Cantidad'];
 
-                $z=$this->Admin->CrearProducto($idMarca, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
+                $z=$this->Enc->CrearProducto($idMarca, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
                 $this->direcciones->RegistroProducto();
             } 
 
@@ -32,7 +32,7 @@
                 $Nombre=$_POST['Nombre'];
                 $Detalles=$_POST['Detalles'];
 
-                $m=$this->Admin->CrearMarca($Nombre, $Detalles);
+                $m=$this->Enc->CrearMarca($Nombre, $Detalles);
                 $this->direcciones->RegistroMarca();
             } 
 

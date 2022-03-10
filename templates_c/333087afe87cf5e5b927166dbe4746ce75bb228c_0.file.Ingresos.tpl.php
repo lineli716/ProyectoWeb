@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-10 21:12:43
+/* Smarty version 4.0.4, created on 2022-03-10 21:42:41
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Encargado\Ingresos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_622a5bbb125e83_37619299',
+  'unifunc' => 'content_622a62c192ef92_35753557',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '333087afe87cf5e5b927166dbe4746ce75bb228c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Encargado\\Ingresos.tpl',
-      1 => 1646939562,
+      1 => 1646944930,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_622a5bbb125e83_37619299 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622a62c192ef92_35753557 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="row">
@@ -40,27 +40,27 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
                     </tr>
                 </thead>
                 <tbody>
-            <?php if ((isset($_smarty_tpl->tpl_vars['administrador']->value))) {?>
+            <?php if ((isset($_smarty_tpl->tpl_vars['encargado']->value))) {?>
                     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['administrador']->value, 'Admin');
-$_smarty_tpl->tpl_vars['Admin']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Admin']->value) {
-$_smarty_tpl->tpl_vars['Admin']->do_else = false;
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['encargado']->value, 'Enc');
+$_smarty_tpl->tpl_vars['Enc']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['Enc']->value) {
+$_smarty_tpl->tpl_vars['Enc']->do_else = false;
 ?>
                         <tr>
                             
                             <td>
-                                <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Nombre'];?>
+                                <?php echo $_smarty_tpl->tpl_vars['Enc']->value['Nombre'];?>
 
                             </td>
 
                             <td>
-                                 <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Cantidad'];?>
+                                 <?php echo $_smarty_tpl->tpl_vars['Enc']->value['Cantidad'];?>
 
                             </td>
 
                             <td>
-                                 <?php echo $_smarty_tpl->tpl_vars['Admin']->value['Razon'];?>
+                                 <?php echo $_smarty_tpl->tpl_vars['Enc']->value['Razon'];?>
 
                             </td>
 

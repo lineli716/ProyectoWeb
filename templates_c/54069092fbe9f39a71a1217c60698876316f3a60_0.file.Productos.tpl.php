@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-09 16:29:24
+/* Smarty version 4.0.4, created on 2022-03-10 21:35:59
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Encargado\Productos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6228c7d42d2349_52111801',
+  'unifunc' => 'content_622a612f26b904_47173962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '54069092fbe9f39a71a1217c60698876316f3a60' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Encargado\\Productos.tpl',
-      1 => 1646838469,
+      1 => 1646944473,
       2 => 'file',
     ),
   ),
@@ -22,14 +22,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_6228c7d42d2349_52111801 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622a612f26b904_47173962 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="row">
 
     <div class="col s11">
-        <form method="post" action="?controller=Administrador&method=RegistroProducto">
+        <form method="post" action="?controller=Encargado&method=RegistroProducto">
 
             <div class="input-field col s11">
                 <input id="idMarca" type="text" name="idMarca"/>

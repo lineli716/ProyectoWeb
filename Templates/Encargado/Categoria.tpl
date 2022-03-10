@@ -3,7 +3,7 @@
 <div class="row">
 
     <div class="col s8">
-        <form method="post" action="?controller=Administrador&method=RegistroCategoria">
+        <form method="post" action="?controller=Encargado&method=RegistroCategoria">
 
             <div class="input-field col s8">
                 <input id="Nombre" type="text" name="Nombre"/>
