@@ -7,7 +7,7 @@
                 <a href="?controller=Direcciones&method=RegistroMarca" class="collection-item">Registrar Marcas</a>
                 <a href="?controller=Direcciones&method=RegistroCategoria" class="collection-item">Registrar categoria</a>
                 <a href="?controller=Direcciones&method=Entreda" class="collection-item">Entrada de Mercadería</a>
-                <a href="?controller=Direccioesn&method=Salida" class="collection-item">Salida de Mercadería</a>
+                <a href="?controller=Direccioes&method=Salida" class="collection-item">Salida de Mercadería</a>
             {/if}
         </div>   
 </div>

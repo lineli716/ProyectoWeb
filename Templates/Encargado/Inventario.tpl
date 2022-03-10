@@ -23,11 +23,11 @@
                         <tr>
                             
                             <td>
-                                {$Enc['Marcas_idMarcas']}
+                                {$Enc['Marca']}
                             </td>
 
                             <td>
-                                 {$Enc['Categoria_idCategoria']}
+                                 {$Enc['Categoria']}
                             </td>
 
                             <td>

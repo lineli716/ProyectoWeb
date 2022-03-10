@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-09 16:25:02
+/* Smarty version 4.0.4, created on 2022-03-10 16:08:20
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Encargado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6228c6ce41e494_85522227',
+  'unifunc' => 'content_622a1464cc8287_82084658',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '893397712c122723ce390a2a94ed959092192c42' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Encargado.tpl',
-      1 => 1646839487,
+      1 => 1646924895,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_6228c6ce41e494_85522227 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622a1464cc8287_82084658 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
