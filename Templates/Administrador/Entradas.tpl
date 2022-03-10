@@ -20,7 +20,6 @@
                 <label for="Razon">Razon del ingreso</label>
             </div>
 
-            
             <div class="row">
                     <div class="input-field col s8 center-align">
                     <input class="waves-effect waves-light btn" type="submit"value="Guardar Ingreso"/>

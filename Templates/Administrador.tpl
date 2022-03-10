@@ -38,6 +38,10 @@
                       {include file='Administrador/Entradas.tpl'}
                       {else if $rol=='Salidas'}
                          {include file='Administrador/Salidas.tpl'}
+                         {else if $rol=='Ingresos'}
+                          {include file='Administrador/Ingresos.tpl'}
+                          {else if $rol=='Egresos'}
+                            {include file='Administrador/Egresos.tpl'}
           {/if}
       {/if}  
            

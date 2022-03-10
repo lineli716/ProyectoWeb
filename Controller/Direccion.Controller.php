@@ -65,5 +65,38 @@
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
+
+        public function Ingresos()
+        {
+            $ad=$this->administrador->VerIngresos();
+            $arr=array();
+            while($row=mysqli_fetch_assoc($ad))
+            {
+                array_push($arr,$row);
+            }
+            
+            $this->smarty->assign('administrador', $arr);
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','Ingresos');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
+
+        public function Egresos()
+        {
+            $ad=$this->administrador->VerSalidas();
+            $arr=array();
+            while($row=mysqli_fetch_assoc($ad))
+            {
+                array_push($arr,$row);
+            }
+            
+            $this->smarty->assign('administrador', $arr);
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','Egresos');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
+
     }
 ?>
