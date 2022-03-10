@@ -14,7 +14,7 @@
 
             public function RegistroProducto()
             {
-               
+                
                 $idMarca=$_POST['idMarca'];
                 $idCategoria=$_POST['idCategoria'];
                 $Nombre=$_POST['Nombre'];
@@ -30,24 +30,19 @@
             {
                
                 $Nombre=$_POST['Nombre'];
-                $Descripcion=$_POST['Detalles'];
+                $Detalles=$_POST['Detalles'];
 
                 $m=$this->Admin->CrearMarca($Nombre, $Detalles);
-                $this->smarty->assign('nav',"Administrador");
-                $this->smarty->assign('title','Administrador');
-                $this->smarty->display('Administrador/Marcas.tpl');
+                $this->direcciones->RegistroMarca();
             } 
 
-            public function RegistroCategoría()
+            public function RegistroCategoria()
             {
                
                 $Nombre=$_POST['Nombre'];
-                $Descripcion=$_POST['Descripcion'];
 
-                $o=$this->Admin->CrearMarca($Nombre, $Descripcion);
-                $this->smarty->assign('nav',"Administrador");
-                $this->smarty->assign('title','Administrador');
-                $this->smarty->display('Administrador/Categoria.tpl');
+                $o=$this->Admin->CrearCategoria($Nombre);
+                $this->direcciones->RegistroCategoria();
             } 
 
 

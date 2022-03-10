@@ -33,13 +33,14 @@
               {else if $rol=='RegistroMarca'}
                 {include file='Administrador/Marcas.tpl'} 
                  {else if $rol=='RegistroCategoria'}
-                   {include file='Administrador/Categorias.tpl'}
-                    {else if $rol=='Entredas'}
+                   {include file='Administrador/Categoria.tpl'}
+                    {else if $rol=='Entradas'}
                       {include file='Administrador/Entredas.tpl'}
                       {else if $rol=='Salidas'}
                          {include file='Administrador/Salidas.tpl'}
           {/if}
-      {/if}         
+      {/if}  
+           
     </div>
   </div>   
 </div>

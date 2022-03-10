@@ -8,11 +8,11 @@
             session_start();
         }
 
-        public function CrearProducto($idMarca, $idCategoria, $Nombre,$Descripcion,$Precio,$Cantidad)
+        public function CrearProducto($idMarca, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad)
         {
             
             $query="INSERT INTO `productos`(`Marcas_idMarcas`, `Categoria_idCategoria`, `Nombre`, `Descripción`, `Precio`, `Cantidad`)
-            VALUES ('[$idMarca]','[$idCategoria]','[$Nombre]','[$Descripcion]','[$Precio]','[$Cantidad]');";
+            VALUES ('$idMarca','$idCategoria','$Nombre','$Descripcion','$Precio','$Cantidad');";
             $resultado=$this->con->query($query);
             $this->con->close();
             return $resultado;
@@ -26,24 +26,23 @@
             return $resultado;
         }
 
-        public function CrearMarca($Nombre)
+        
+        public function CrearMarca($Nombre, $Detalles)
         {
-            
-            $query="INSERT INTO `categoria`(`Nombre`) VALUES ('[$Nombre]');";
-            $resultado=$this->con->query($query);
-            $this->con->close();
-            return $resultado;
-        }
-        public function CrearCategoria($Nombre, $Detalles)
-        {
-            
-            $query="INSERT INTO `marcas`( `Nombre`, `Detalles`) VALUES ('[$Nombre]','[$Detalles]');";
+            $query="INSERT INTO `marcas`(`Nombre`, `Detalles`) VALUES ('$Nombre','$Detalles');";
             $resultado=$this->con->query($query);
             $this->con->close();
             return $resultado;
         }
 
-
+        public function CrearCategoria($Nombre)
+        {
+                    
+            $query="INSERT INTO `categoria`(`Nombre`) VALUES ('$Nombre');";
+            $resultado=$this->con->query($query);
+            $this->con->close();
+            return $resultado;
+        }      
 
 
     }

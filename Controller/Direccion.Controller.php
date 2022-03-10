@@ -42,7 +42,7 @@
             $this->smarty->display('Administrador.tpl');
         }
 
-        public function RegistroCategoría()
+        public function RegistroCategoria()
         {
             $this->smarty->assign('nav','administrador');
             $this->smarty->assign('rol','RegistroCategoria');
