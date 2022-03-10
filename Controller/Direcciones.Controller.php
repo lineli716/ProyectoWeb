@@ -64,5 +64,37 @@
             $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
         }
+
+        public function Ingresos()
+        {
+            $ad=$this->encargado->VerIngresos();
+            $arr=array();
+            while($row=mysqli_fetch_assoc($ad))
+            {
+                array_push($arr,$row);
+            }
+            
+            $this->smarty->assign('encargado', $arr);
+            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('rol','Ingresos');
+            $this->smarty->assign('title','Encargado');
+            $this->smarty->display('Encargado.tpl');
+        }
+
+        public function Egresos()
+        {
+            $ad=$this->encargado->VerSalidas();
+            $arr=array();
+            while($row=mysqli_fetch_assoc($ad))
+            {
+                array_push($arr,$row);
+            }
+            
+            $this->smarty->assign('encargado', $arr);
+            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('rol','Egresos');
+            $this->smarty->assign('title','Encargado');
+            $this->smarty->display('Encargado.tpl');
+        }
     }
 ?>

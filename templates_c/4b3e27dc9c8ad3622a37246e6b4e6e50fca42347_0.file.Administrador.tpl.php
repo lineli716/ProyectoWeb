@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-10 16:00:12
+/* Smarty version 4.0.4, created on 2022-03-10 20:57:22
   from 'C:\xampp\htdocs\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_622a127c712ce5_22411382',
+  'unifunc' => 'content_622a5822356a63_43968146',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4b3e27dc9c8ad3622a37246e6b4e6e50fca42347' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\templates\\Administrador.tpl',
-      1 => 1646924379,
+      1 => 1646939562,
       2 => 'file',
     ),
   ),
@@ -26,10 +26,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Administrador/Categoria.tpl' => 1,
     'file:Administrador/Entradas.tpl' => 1,
     'file:Administrador/Salidas.tpl' => 1,
+    'file:Administrador/Ingresos.tpl' => 1,
+    'file:Administrador/Egresos.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_622a127c712ce5_22411382 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622a5822356a63_43968146 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
@@ -77,6 +79,12 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
 ?>
                       <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Salidas') {?>
                          <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Salidas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                         <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Ingresos') {?>
+                          <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Ingresos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                          <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Egresos') {?>
+                            <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Egresos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
           <?php }?>
       <?php }?>  

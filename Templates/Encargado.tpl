@@ -33,17 +33,22 @@
               {else if $rol=='RegistroMarca'}
                 {include file='Encargado/Marcas.tpl'} 
                  {else if $rol=='RegistroCategoria'}
-                   {include file='Encargado/Categorias.tpl'}
+                   {include file='Encargado/Categoria.tpl'}
                     {else if $rol=='Entradas'}
                       {include file='Encargado/Entradas.tpl'}
                       {else if $rol=='Salidas'}
                          {include file='Encargado/Salidas.tpl'}
+                         {else if $rol=='Ingresos'}
+                          {include file='Encargado/Ingresos.tpl'}
+                          {else if $rol=='Egresos'}
+                            {include file='Encargado/Egresos.tpl'}
           {/if}
-      {/if}         
-      </div>
+      {/if}  
+           
+    </div>
+  </div>   
 </div>
 </div>
-
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">
     <div class="container  ">

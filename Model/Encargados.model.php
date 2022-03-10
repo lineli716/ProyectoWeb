@@ -25,8 +25,7 @@
             $this->con->close();
             return $resultado;
         }
-
-        
+ 
         public function CrearMarca($Nombre, $Detalles)
         {
             $query="INSERT INTO `marcas`(`Nombre`, `Detalles`) VALUES ('$Nombre','$Detalles');";
@@ -59,6 +58,26 @@
             $this->con->close();
             return $resultado;
         } 
+        public function VerIngresos()
+        {
+            
+            $query="SELECT p.Nombre,e.Cantidad, e.Razon FROM `entrada` AS e, productos AS p 
+            WHERE e.`Productos_idProductos`=p.idProductos;";
+            $resultado=$this->con->query($query);
+            $this->con->close();
+            return $resultado;
+        }
+
+        public function VerSalidas()
+        {
+            
+            $query="SELECT p.Nombre,e.Cantidad, e.Razon FROM `salida` AS e, productos AS p 
+            WHERE e.`Productos_idProductos`=p.idProductos;";
+            $resultado=$this->con->query($query);
+            $this->con->close();
+            return $resultado;
+        }
+
 
     }
 
