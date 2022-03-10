@@ -17,15 +17,14 @@
       </nav>
   </nav>
 </div>
+
 <div class="center"> <h3>Encargado</h3></div>
 <br></br>
 <div class="row">
   <div class="col s5">
     {include file="Navs/Encar.tpl"}
     </div>
-    <div class="col 1">
-    </div>
-    <div class="col s5">
+    <div class="col s7"> 
       {if isset($rol)}
           {if $rol=='Inventario'}
             {include file='Encargado/Inventario.tpl'}
@@ -42,7 +41,7 @@
           {/if}
       {/if}         
       </div>
-  </div>
+</div>
 </div>
 
 

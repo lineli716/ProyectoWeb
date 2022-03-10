@@ -49,7 +49,5 @@
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
-
     }
-
 ?>
