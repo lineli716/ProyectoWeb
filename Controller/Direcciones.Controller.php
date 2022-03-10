@@ -27,8 +27,7 @@
         }
         public function RegistroProducto()
         {
-            
-            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('nav', 'encargado');
             $this->smarty->assign('rol','RegistroProducto');
             $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
@@ -36,16 +35,32 @@
 
         public function RegistroMarca()
         {
-            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('nav', 'encargado');
             $this->smarty->assign('rol','RegistroMarca');
             $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
         }
 
-        public function RegistroCategoría()
+        public function RegistroCategoria()
         {
-            $this->smarty->assign('nav','encargado');
+            $this->smarty->assign('nav', 'encargado');
             $this->smarty->assign('rol','RegistroCategoria');
+            $this->smarty->assign('title','Encargado');
+            $this->smarty->display('Encargado.tpl');
+        }
+
+        public function Entradas()
+        {
+            $this->smarty->assign('nav', 'encargado');
+            $this->smarty->assign('rol','Entradas');
+            $this->smarty->assign('title','Encargado');
+            $this->smarty->display('Encargado.tpl');
+        }
+
+        public function Salidas()
+        {
+            $this->smarty->assign('nav', 'encargado');
+            $this->smarty->assign('rol','Salidas');
             $this->smarty->assign('title','Encargado');
             $this->smarty->display('Encargado.tpl');
         }

@@ -3,53 +3,68 @@
         {
             public $Enc;
             public $smarty;
+            public $direcciones;
 
             public function __construct()
             {
-                $this->Enc=new Encargado();
+                $this->Enc=new Encargados();
                 $this->smarty=new Smarty();
+                $this->direcciones=new Direcciones();
             }
 
             public function RegistroProducto()
             {
-               
-                $idControl=$_POST['Control_idControl'];
-                $idUsuarios=$_POST['Usuario_idUsuario'];
-                $idMarcas=$_POST['Marcas_idMarcas'];
-                $idCategoria=$_POST['Categoria_idCategoria'];
+                
+                $idMarca=$_POST['idMarca'];
+                $idCategoria=$_POST['idCategoria'];
                 $Nombre=$_POST['Nombre'];
                 $Descripcion=$_POST['Descripcion'];
                 $Precio=$_POST['Precio'];
                 $Cantidad=$_POST['Cantidad'];
 
-                $z=$this->Enc->CrearProducto($idControl, $idUsuarios, $idMarcas, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
-                $this->smarty->assign('nav',"Encargado");
-                $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Encargado/Productos.tpl');
+                $z=$this->Admin->CrearProducto($idMarca, $idCategoria, $Nombre, $Descripcion, $Precio, $Cantidad);
+                $this->direcciones->RegistroProducto();
             } 
 
             public function RegistroMarca()
             {
                
                 $Nombre=$_POST['Nombre'];
-                $Descripcion=$_POST['Detalles'];
+                $Detalles=$_POST['Detalles'];
 
-                $m=$this->Enc->CrearMarca($Nombre, $Detalles);
-                $this->smarty->assign('nav',"Encargado");
-                $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Encargado/Marcas.tpl');
+                $m=$this->Admin->CrearMarca($Nombre, $Detalles);
+                $this->direcciones->RegistroMarca();
             } 
 
-            public function RegistroCategoría()
+            public function RegistroCategoria()
             {
                
                 $Nombre=$_POST['Nombre'];
-                $Descripcion=$_POST['Descripcion'];
 
-                $o=$this->Enc->CrearMarca($Nombre, $Descripcion);
-                $this->smarty->assign('nav',"Encargado");
-                $this->smarty->assign('title','Encargado');
-                $this->smarty->display('Encargado/Categoria.tpl');
+                $o=$this->Enc->CrearCategoria($Nombre);
+                $this->direcciones->RegistroCategoria();
+            } 
+
+            public function Entradas()
+            {
+               
+                $idProducto=$_POST['idProducto'];
+                $Cantidad=$_POST['Cantidad'];
+                $Razon=$_POST['Razon'];
+
+                $e=$this->Enc->Mas($idProducto, $Cantidad, $Razon);
+                $this->direcciones->Entradas();
+            } 
+
+            public function Salidas()
+            {
+               
+                $idProducto=$_POST['idProducto'];
+                $Cantidad=$_POST['Cantidad'];
+                $Razon=$_POST['Razon'];
+
+                $s=$this->Enc->Menos($idProducto, $Cantidad, $Razon);
+                $this->direcciones->Salidas();
             } 
 
 
