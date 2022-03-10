@@ -42,8 +42,23 @@
             $resultado=$this->con->query($query);
             $this->con->close();
             return $resultado;
-        }      
+        } 
+        
+        public function Mas($idProducto, $Cantidad, $Razon)
+        {      
+            $query="INSERT INTO `entrada`( `Productos_idProductos`, `Cantidad`, `Razon`) VALUES ('$idProducto','$Cantidad','$Razon');";
+            $resultado=$this->con->query($query);
+            $this->con->close();
+            return $resultado;
+        } 
 
+        public function Menos($idProducto, $Cantidad, $Razon)
+        {      
+            $query="INSERT INTO `salida`( `Productos_idProductos`, `Cantidad`, `Razon`) VALUES ('$idProducto','$Cantidad','$Razon');";
+            $resultado=$this->con->query($query);
+            $this->con->close();
+            return $resultado;
+        } 
 
     }
 

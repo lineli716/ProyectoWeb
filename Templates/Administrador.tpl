@@ -21,17 +21,10 @@
 <div class="center"> <h3>Administrador</h3></div>
 <br></br>
 <div class="row">
-<<<<<<< Updated upstream
-  <div class="col s4">
-    {include file="Navs/Admin.tpl"}
-  </div>
-    <div class="col s8">
-=======
   <div class="col s5">
     {include file="Navs/Admin.tpl"}
     </div>
     <div class="col s7"> 
->>>>>>> Stashed changes
       {if isset($rol)}
           {if $rol=='Inventario'}
             {include file='Administrador/Inventario.tpl'}
@@ -42,7 +35,7 @@
                  {else if $rol=='RegistroCategoria'}
                    {include file='Administrador/Categoria.tpl'}
                     {else if $rol=='Entradas'}
-                      {include file='Administrador/Entredas.tpl'}
+                      {include file='Administrador/Entradas.tpl'}
                       {else if $rol=='Salidas'}
                          {include file='Administrador/Salidas.tpl'}
           {/if}

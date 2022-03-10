@@ -49,5 +49,21 @@
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
+
+        public function Entradas()
+        {
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','Entradas');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
+
+        public function Salidas()
+        {
+            $this->smarty->assign('nav','administrador');
+            $this->smarty->assign('rol','Salidas');
+            $this->smarty->assign('title','Administrador');
+            $this->smarty->display('Administrador.tpl');
+        }
     }
 ?>

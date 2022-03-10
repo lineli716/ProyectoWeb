@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-09 16:23:12
+/* Smarty version 4.0.4, created on 2022-03-10 05:52:51
   from 'C:\xampp\htdocs\ProyectoWeb\ProyectoWeb\templates\Administrador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6228c660d99912_48643169',
+  'unifunc' => 'content_62298423d04a71_68544195',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51d3e0df4a40bd3a18038651f8dc60196100e14d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ProyectoWeb\\ProyectoWeb\\templates\\Administrador.tpl',
-      1 => 1646839384,
+      1 => 1646887969,
       2 => 'file',
     ),
   ),
@@ -24,12 +24,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Administrador/Productos.tpl' => 1,
     'file:Administrador/Marcas.tpl' => 1,
     'file:Administrador/Categoria.tpl' => 1,
-    'file:Administrador/Entredas.tpl' => 1,
+    'file:Administrador/Entradas.tpl' => 1,
     'file:Administrador/Salidas.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_6228c660d99912_48643169 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62298423d04a71_68544195 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="navbar-fixed">
@@ -54,11 +54,11 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
 <div class="center"> <h3>Administrador</h3></div>
 <br></br>
 <div class="row">
-  <div class="col s4">
+  <div class="col s5">
     <?php $_smarty_tpl->_subTemplateRender("file:Navs/Admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-  </div>
-    <div class="col s8">
+    </div>
+    <div class="col s7"> 
       <?php if ((isset($_smarty_tpl->tpl_vars['rol']->value))) {?>
           <?php if ($_smarty_tpl->tpl_vars['rol']->value == 'Inventario') {?>
             <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Inventario.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -73,7 +73,7 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
                    <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Categoria.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                     <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Entradas') {?>
-                      <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Entredas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                      <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Entradas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                       <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Salidas') {?>
                          <?php $_smarty_tpl->_subTemplateRender('file:Administrador/Salidas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -83,6 +83,7 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
            
     </div>
   </div>   
+</div>
 </div>
 
 <footer class="page-footer card  lime accent-3 "><div class="card  lime accent-3">

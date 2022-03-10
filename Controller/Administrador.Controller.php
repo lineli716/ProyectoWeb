@@ -45,6 +45,28 @@
                 $this->direcciones->RegistroCategoria();
             } 
 
+            public function Entradas()
+            {
+               
+                $idProducto=$_POST['idProducto'];
+                $Cantidad=$_POST['Cantidad'];
+                $Razon=$_POST['Razon'];
+
+                $e=$this->Admin->Mas($idProducto, $Cantidad, $Razon);
+                $this->direcciones->Entradas();
+            } 
+
+            public function Salidas()
+            {
+               
+                $idProducto=$_POST['idProducto'];
+                $Cantidad=$_POST['Cantidad'];
+                $Razon=$_POST['Razon'];
+
+                $s=$this->Admin->Menos($idProducto, $Cantidad, $Razon);
+                $this->direcciones->Salidas();
+            } 
+
 
         }
 ?>
